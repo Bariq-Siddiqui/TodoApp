@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <!-- css link -->
+    <link rel="stylesheet" href="style.css">    
+    <!-- font Awesome link -->
+    <script src="https://kit.fontawesome.com/5a2eeb8c3a.js" crossorigin="anonymous"></script> 
+    <!-- firebase link -->
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-database.js"></script>
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyAsBovhQ10LIdqNYin7nlERmwMzk5QBp4Y",
+        authDomain: "practice-d0a68.firebaseapp.com",
+        projectId: "practice-d0a68",
+        storageBucket: "practice-d0a68.appspot.com",
+        messagingSenderId: "1054356929694",
+        appId: "1:1054356929694:web:8211596c66d8f3281c0f8f"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+</head>
+<body class="body">
+    <div class="wrapper fadeInDown">
+        <div id="formContent">
+          <!-- Tabs Titles -->
+          <h2 class="active"> Sign In </h2>
+          <h2 class="inactive underlineHover"><a href="index.html">Sign Up</a></h2>
+      
+          <!-- Icon -->
+          <div class="fadeIn first">
+            <i class="fas fa-user" id="icon"></i>
+          </div>
+      
+          <!-- Login Form -->
+            <input type="gmail" id="email" class="fadeIn second" placeholder="Gmail" >
+            <input type="password" id="password" class="fadeIn third" placeholder="Password" >
+            <input type="submit" class="fadeIn fourth" value="Log In" onClick="onLogin()">
+      
+          <!-- Remind Passowrd -->
+          <div id="formFooter">
+            <a class="underlineHover" href="index.html">I DON'T HAVE AN ACCOUNT</a>
+          </div>
+      
+        </div>
+      </div>
+</body>
+<!-- js link -->
+<script src="app.js"></script>
+</html>
